@@ -1,0 +1,119 @@
+/* dit is voor de pagina balk*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-size: 50%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url(https://wallpapercrafter.com/th800/87115-lines-simple-background-abstract-hd-4k-dark-black-dribbble-oled.jpg);
+    overflow-y: hidden;
+  }
+  nav{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    margin: auto;
+    background: #000000;
+    justify-content: space-between;
+    z-index: auto;
+    font-family: "Goldman", cursive;
+    font-size: 1px;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav li {
+    font-size: 2.5rem;
+    padding: 0 4rem 0 4rem;
+  }
+  nav li :hover{
+    color: blue;
+    transition: 0,5s;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav img {
+    width: 5vw;
+    margin-right: auto;
+  }
+/* voor de teskt*/
+div.rst{
+  position: absolute;
+  margin-left: 50px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+}
+div.rst h1{
+  font-size: 65px;
+  margin-left: 50px;
+}
+div.rst p{
+  font-size: 25px;
+}
+div.rsu{
+  position: absolute;
+  margin-left: 550px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+}
+
+div.rsu h1{
+  font-size: 65px;
+  margin-left: 50px;
+}
+div.rsu p{
+  font-size: 25px;
+  margin-left: 50px;
+}
+div.rsv{
+  position: absolute;
+  margin-left: 1150px;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+}
+div.rsv h1{
+  font-size: 65px;
+  margin-left: 50px;
+}
+div.rsv p{
+  font-size: 25px;
+}
+div.edu{
+  position: absolute;
+  margin-left: 550px;
+  font-family: 'Roboto Slab', serif;
+  color: rgb(0, 255, 132);
+  margin-top: 500px;
+}
+div.edu h1{
+  font-size: 65px;
+  margin-left: 100px;
+}
+img{
+  width: 30vw;
+  border-radius: 20px;
+}
+#e1{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 250px;
+}
+#e2{
+  position: absolute;
+  margin-left: 550px;
+  margin-top: 250px;
+}
+#e3{
+  position: absolute;
+  margin-left: 1050px;
+  margin-top: 250px;
+}

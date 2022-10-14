@@ -1,0 +1,355 @@
+/* dit is voor de pagina balk*/
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 50%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url(https://images3.alphacoders.com/104/1044851.jpg);
+  overflow-y: hidden;
+}
+nav{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #000000;
+  justify-content: space-between;
+  z-index: auto;
+  font-family: "Goldman", cursive;
+  font-size: 1px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav li :hover{
+  color: blue;
+  transition: 0,5s;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  width: 5vw;
+  margin-right: auto;
+}
+
+/* dit is voor het menu in de pagina */
+div.sec-center h1{
+  color: white;
+}
+div.sec-center {
+  position: absolute;
+  max-width: 100%;
+  text-align: center;
+  z-index: 200;
+  margin-left: 600px;
+  margin-top: 50px;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+.dropdown:checked + label,
+.dropdown:not(:checked) + label{
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 2;
+  height: 50px;
+  transition: all 200ms linear;
+  border-radius: 4px;
+  width: 220px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  text-align: center;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
+}
+.dropdown:checked + label:before,
+.dropdown:not(:checked) + label:before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: auto;
+  pointer-events: none;
+}
+.dropdown:checked + label:before{
+  pointer-events: auto;
+}
+.dropdown:not(:checked) + label .uil {
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 200ms linear;
+}
+.dropdown:checked + label .uil {
+  transform: rotate(180deg);
+  font-size: 24px;
+  margin-left: 10px;
+  transition: transform 200ms linear;
+}
+div.section-dropdown {
+  position: absolute;
+  padding: 5px;
+  background-color: #111;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 200ms linear;
+}
+.dropdown:checked ~ .section-dropdown{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+div.section-dropdown:before {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  content: '';
+  display: block;
+  z-index: 1;
+}
+div.section-dropdown:after {
+  position: absolute;
+  top: -7px;
+  left: 30px;
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent; 
+  border-bottom: 8px solid #111;
+  content: '';
+  display: block;
+  z-index: 2;
+  transition: all 200ms linear;
+}
+div.sec-center a {
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  margin: 2px 0;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+}
+div.sec-center a:hover {
+  color: #102770;
+  background-color: #ffeba7;
+}
+div.sec-center a .uil {
+  font-size: 22px;
+}
+.dropdown-sub:checked + label,
+.dropdown-sub:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 2px;
+  padding: 5px 0;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: left;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: space-between;
+    -ms-flex-pack: distribute;
+    cursor: pointer;
+}
+.dropdown-sub:checked + label .uil,
+.dropdown-sub:not(:checked) + label .uil{
+  font-size: 22px;
+}
+.dropdown-sub:not(:checked) + label .uil {
+  transition: transform 200ms linear;
+}
+.dropdown-sub:checked + label .uil {
+  transform: rotate(135deg);
+  transition: transform 200ms linear;
+}
+.dropdown-sub:checked + label:hover,
+.dropdown-sub:not(:checked) + label:hover{
+  color: #102770;
+  background-color: #ffeba7;
+}
+div.section-dropdown-sub {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+div.dropdown-sub:checked ~ .section-dropdown-sub{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+div.section-dropdown-sub a {
+  font-size: 14px;
+}
+div.section-dropdown-sub a .uil {
+  font-size: 20px;
+}
+
+/* software dev tekst*/
+.sd{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 80%;
+  font-family: Goldman, cursive;
+}
+.soft{
+  flex-basis: 50%;
+  margin-left: 100px;
+}
+div.soft h1{
+  font-size: 88px;
+}
+div.soft p{
+  font-size: 15px;
+}
+div.soft button{
+  width: 180px;
+  color: white;
+  font-size: 20px;
+  padding: 12px 0;
+  background: rgb(0, 0, 0);
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 20px;
+}
+div.soft button :hover{
+  color: blue;
+}
+div.soft button a{
+  text-decoration: none;
+  color: white;
+}
+div.soft button a :hover{
+  color: blue;
+}
+div.soft h5 a{
+  text-decoration: none;
+  color: black;
+}
+div.soft h5 a :hover{
+  color: blue;
+}
+
+/* afbeeldingen met de tekst*/
+
+div.card{
+  width: 250px;
+  height: 280px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition:0.5s;
+}
+div.card :hover{
+  color: blue;
+}
+div.soft h1{
+  text-shadow: 4px 4px 8px rgb(36, 36, 36);
+}
+div.card1{
+  background-image: url(https://wallpapercave.com/wp/wp4834728.jpg);
+}
+div.card2{
+  background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80);
+}
+div.card3{
+  background-image: url(https://images.pexels.com/photos/3593865/pexels-photo-3593865.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+div.card4{
+  background-image: url(https://media.istockphoto.com/vectors/school-supplies-seamless-pattern-with-line-icons-study-tools-globe-vector-id1151966778);
+}
+div.soft{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+div.soft h5{
+  font-size: 33px;
+}
+/* ZODAT JE EEN AFBEELDING LAAT BEWEGEN: img = Transition + img hover = Transform translateY */
+div.card:hover{
+  transform: translateY(-10px);
+  color: blue;
+}

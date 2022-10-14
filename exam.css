@@ -1,0 +1,94 @@
+/* dit is voor de pagina balk*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-size: 50%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  nav{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    margin: auto;
+    background: #000000;
+    justify-content: space-between;
+    z-index: auto;
+    font-family: "Goldman", cursive;
+    font-size: 1px;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav li {
+    font-size: 2.5rem;
+    padding: 0 4rem 0 4rem;
+  }
+  nav li :hover{
+    color: blue;
+    transition: 0,5s;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav img {
+    width: 5vw;
+    margin-right: auto;
+  }
+/*FF SNEL EXTRA*/
+div.werk{
+  background-color: rgb(255, 255, 255);
+}
+/*DIT IS VOOR DE PAGINA'S*/
+div.p1{
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+}
+div.p2{
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+}
+div.p3{
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+}
+/*img*/
+img{
+  width: 75vw;
+}
+#e1{
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 250px;
+}
+#e2{
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 450px;
+}
+#e3{
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 650px;
+}
+/*Tekst*/
+div.mainp h1{
+  font-size: 50px;
+  font-family: 'Rubik', sans-serif;
+  margin-left: 10%;
+}
+div.mainp p{
+  font-size: 25px;
+  font-family: 'Rubik', sans-serif;
+  margin-left: 10%;
+}
+
+

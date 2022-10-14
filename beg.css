@@ -1,0 +1,163 @@
+/* dit is voor de pagina balk*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-size: 50%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  nav{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    margin: auto;
+    background: #000000;
+    justify-content: space-between;
+    z-index: auto;
+    font-family: "Goldman", cursive;
+    font-size: 1px;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav li {
+    font-size: 2.5rem;
+    padding: 0 4rem 0 4rem;
+  }
+  nav li :hover{
+    color: blue;
+    transition: 0,5s;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav img {
+    width: 5vw;
+    margin-right: auto;
+  }
+/*DIT IS VOOR DE PAGINA'S*/
+div.werk{
+  height: 100vh;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+section#main{
+  margin-left: 40%;
+  margin-right: 25%;
+  margin-top: 20vh;
+}
+section#maat{
+  margin-left: 40%;
+  margin-right: 25%;
+  margin-top: 10vh;
+}
+section#fond{
+  margin-left: 40%;
+  margin-right: 25%;
+  margin-top: 10vh;
+}
+section#exam{
+  margin-left: 40%;
+  margin-right: 25%;
+  height: 60vh;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+}
+/*Voor de tekst*/
+div.maat h1{
+  font-size: 50px;
+}
+div.fond h1{
+  font-size: 50px;
+}
+div.fond h2{
+  font-size: 20px;
+}
+div.fond h3{
+  font-size: 30px;
+}
+div.main h1{
+  font-size: 45px;
+  margin-bottom: 5%;
+}
+div.exam h1{
+  font-size: 50px;
+}
+/*Voor de p tekst*/
+div.maat p{
+  font-size: 20px;
+}
+div.fond p{
+  font-size: 20px;
+}
+div.fond p{
+  font-size: 20px;
+}
+div.fond p{
+  font-size: 20px;
+}
+div.main p{
+  font-size: 20px;
+}
+div.exam p{
+  font-size: 20px;
+}
+/*VOOR DE AFBEELDINGEN*/
+img#main{
+  position: absolute;
+  width: 20%;
+  height: 50vh;
+  margin-left: -30%;
+  border-radius: 20px;
+}
+img#maat{
+  position: absolute;
+  width: 20%;
+  height: 50vh;
+  margin-left: -30%;
+  border-radius: 20px;
+}
+img#fond{
+  position: absolute;
+  width: 20%;
+  height: 50vh;
+  margin-left: -30%;
+  border-radius: 20px;
+}
+img#exam{
+  position: absolute;
+  width: 20%;
+  height: 50vh;
+  margin-left: -30%;
+  border-radius: 20px;
+}
+/*DE MAIN BACKGROUND*/
+html{
+  background-color: #141414;
+}
+/*KLEUREN*/
+h1{
+  color: white;
+}
+h2{
+  color: white;
+}
+h3{
+  color: white;
+}
+p{
+  color: white;
+}
