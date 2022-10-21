@@ -1,8 +1,9 @@
-/* dit is voor de pagina balk*/
+
 *{
   margin: 0;
   padding: 0;
 }
+/*head*/
 html{
   font-size: 50%;
   overflow-x: hidden;
@@ -10,6 +11,7 @@ html{
   background-image: url(https://images3.alphacoders.com/104/1044851.jpg);
   overflow-y: hidden;
 }
+/* dit is voor de pagina balk*/
 nav{
   align-items: center;
   display: flex;
