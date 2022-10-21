@@ -1,0 +1,47 @@
+/* dit is voor de pagina balk*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    font-size: 50%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: url(backgrond.png);
+    overflow-y: hidden;
+  }
+  nav{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    min-height: 10vh;
+    flex-wrap: wrap;
+    margin: auto;
+    background: #000000;
+    justify-content: space-between;
+    z-index: auto;
+    font-family: "Goldman", cursive;
+    font-size: 1px;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav li {
+    font-size: 2.5rem;
+    padding: 0 4rem 0 4rem;
+  }
+  nav li :hover{
+    color: blue;
+    transition: 0,5s;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav img {
+    width: 5vw;
+    margin-right: auto;
+  }
