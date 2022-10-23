@@ -8,6 +8,7 @@
 html{
   font-size: 50%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 /* einde head*/
 
@@ -64,6 +65,7 @@ nav a{
 nav img{
   width: 5vw;
   margin-right: auto;
+  cursor: pointer;
 }
 
 /* einde bovenbalk*/
@@ -141,7 +143,34 @@ section#pagina1{
   background-image: url(bg-pge1.jpg);
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
 }
+
+
+/*ANIMATIES*/
+
+img#plane{
+  position: absolute;
+  width: 5vw;
+  margin-top: 120px;
+  animation-name: plane;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes plane{
+  0% {left: -10%;}
+  100% {left: 100%;}
+}
+
+@keyframes button-f{ /*van de witte button (begin avontuur)*/
+  0% {left: 0px; top: 0px;}
+  25% {left: 0px; top: -10px;}
+  50% {top: 0px;}
+  75% {left: 0px; top: 10px;}
+  100% {left: 0px; top: 0px;}
+}
+
+/* END ANIMATIES*/
 div.hoofdtxt{
   position: absolute;
   font-family: "Goldman", cursive;
@@ -183,6 +212,10 @@ button.start {
   min-width: 200px;
   font-family: 'Signika Negative', sans-serif;
   box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+  animation-name: button-f;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 button.start a{
   text-decoration: none;
@@ -299,6 +332,7 @@ div.kaart a:hover{
 div.kaart:hover{
   transform: translateY(-10px);
   transition: 600ms;
+  box-shadow: 0px 8px 16px 0px blue;
 }
 
 div.kaart1{
@@ -319,6 +353,34 @@ div.kaart5{
 div.kaart6{
   background-image: url(https://r1.ilikewallpaper.net/iphone-12-pro-wallpapers/download-103214/photography-of-tree.jpg);
 }
+
+button.end {
+  position: absolute;
+  margin-top: 34%;
+  margin-left: 15%;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 200px;
+  font-family: 'Signika Negative', sans-serif;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+}
+button.end a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+button.end:hover{
+  background-color: #2d2d2d;
+  transition: 500ms;
+}
+button.end a:hover{
+  color: blue;
+  transition: 1000ms;
+}
 /*EIND PAGINA 3*/
 
 
@@ -338,18 +400,100 @@ section#pagina5{
   background-position: bottom;
   height: 90vh;
 }
+
+img#boat{
+  position: absolute;
+  width: 20vw;
+  margin-top: 330px;
+  margin-left: 100px;
+  animation-name: boat;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes boat{
+  0% {left: 0px;}
+  25% {left: -30px;}
+  50% {left: 0px;}
+  75% {left: 30px;}
+  100% {left: 0px;}
+}
+
+div.maintxt5{
+  position: absolute;
+  font-family: "Goldman", cursive;
+  font-size: 60px;
+  margin-top: 5%;
+  margin-left: 5%;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+div.maintxt5 p{
+  font-size: 20px;
+}
+
+.tabel {
+  position: absolute;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 30px;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-top: 21.5%;
+  margin-left: 35%;
+  font-family: "Goldman", cursive;
+}
+
+.tabel thead tr {
+  background-color: blue;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tabel th,
+.tabel td {
+  padding: 12px 15px;
+}
+
+.tabel onder tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tabel onder tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tabel onder tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.tabel onder tr.active {
+  font-weight: bold;
+  color: #009879;
+}
 /*EIND PAGINA 5*/
 
 /*EXTRA*/
 ::-webkit-scrollbar {
   display: none;
 }
-.footer {
-  height: 10vh;
+div.footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  max-height: 10vh;
+  min-height: 10vh;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgb(0, 0, 0);
   color: white;
-  text-align: center;
+  font-family: "Goldman", cursive;
+  font-size: 15px;
+}
+div.footer h1{
+  margin-left: 5%;
 }
