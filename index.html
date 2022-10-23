@@ -10,78 +10,127 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap"
       rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans+Mono:wght@500&family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Noto+Sans+Mono:wght@500&family=Poppins:ital,wght@1,600&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>je zou dit maar moet maken op school Homepage</title>
   </head>
   <!--Haal je Fonts hiero: https://fonts.google.com/specimen/Roboto+Slab?preview.size=26 Voor als ik het vergeet-->
-  <div class="bar">
+
+
+  <!-- start voor de pagina balk-->
    <nav>
      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Anonymous_emblem.svg/800px-Anonymous_emblem.svg.png" id="logo" />
      <ul>
-      <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-       <li><a href="#">Game</a></li>
-       <li><a href="http://127.0.0.1:5500/Software/GetStarted.html">Software</a></li>
-       <li><a href="http://127.0.0.1:5500/StudieAdvies/stud.html">Studie</a></li>
-        <li><a href="http://127.0.0.1:5500/informatie/info.html">Informatie</a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="http://127.0.0.1:5500/Homepage/mainpage.html">Home</a></li>
-        <li><a href="#"></a></li>
+       <li><a href="#">GAME</a></li>
+       <li><a href="#">SOFTWARE</a></li>
+       <li><a href="#">STUDIE</a></li>
+        <li><a href="#">INFORMATIE</a></li>
+        <li id="home"><a href="#">HOME</a></li> 
       </ul>
     </nav>
-  </div>
-<!--Dit IS VOOR DE PAGINA MENU -->
-  <div class="sec-center"> 	
-    <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-    <label class="for-dropdown" for="dropdown">De Moderators <i class="uil uil-arrow-down"></i></label>
-    <div class="section-dropdown"> 
-      <a href="#">Amerencio <i class="uil uil-arrow-right"></i></a>
-      <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
-      <label class="for-dropdown-sub" for="dropdown-sub">Milan <i class="uil uil-plus"></i></label>
-      <div class="section-dropdown-sub"> 
-        <a href="#">a <i class="uil uil-arrow-right"></i></a>
-        <a href="#">b <i class="uil uil-arrow-right"></i></a>
-      </div>
-      <a href="#">     <i class="uil uil-arrow-right"></i></a>
-      <a href="http://127.0.0.1:5500/opleidingswijzer/wijzer.html">OplijgingsWijzer <i class="uil uil-arrow-right"></i></a>
-      <a href="http://127.0.0.1:5500/begeleiding/beg.html">Begeleiding <i class="uil uil-arrow-right"></i></a>
-    </div>
-  </div>
-</html>
+    <!--end voor pagina'baklk-->
 
-<!--Dit IS VOOR DE PAGINA TEKST -->
 
-<body>
-  <div class="sd">
-    <div class="soft">
-      <h1>Software Development</h1>
-      <p>Een softwaredeveloper is een persoon die zich
-        bezighoudt met het programmeren van software.
-        Met de term kan ook een volledig bedrijf bedoeld worden.
-        Een softwareontwikkelaar wordt ook wel programmeur,
-        computerprogrammeur of applicatieontwikkelaar genoemd.</p>
-        <button type="button"><a href="http://127.0.0.1:5500/ouderavond/ouderavond.html">Extra Info</a></button>
-    </div>
-    <div class="soft">
-      <div class="card card1">
-        <h5><a href="http://127.0.0.1:5500/Canvas/can.html">Canvas</a></h5>
-        <p></p>
+    <!--PAGINA 1-->
+    <section id="pagina1">
+
+    <!--BEGIN DE MODERATORS-->
+      <div class="dropdown">
+        <button class="dropbtn">DE MODERATORS</button>
+        <div class="dropdown-content">
+        <a href="#">Amerencio</a>
+        <a href="#">Milan</a>
+        </div>
       </div>
-      <div class="card card2">
-        <h5><a href="http://127.0.0.1:5500/Eduarte/edu.html">Eduarte</a></h5>
-        <p></p>
+    <!--EINDE DE MODERATORS-->
+
+      <div class="hoofdtxt">
+        <h1>Software <br>
+          <ff>Develompent</ff> <br>
+        </h1>
+        <p>Een softwareontwikkelaar is een persoon die zich bezighoudt met het programmeren van software. <br>
+          Met de term kan ook een volledig bedrijf bedoeld worden. <br>
+          Een softwareontwikkelaar wordt ook wel programmeur, computerprogrammeur of applicatieontwikkelaar genoemd. <br>
+          Ik ben nu nog aan de bouw maar als dit klaar is, zal het een van de mooiste sites door mij gemaakt zijn. <br>
+        </p>
       </div>
-      <div class="card card3">
-        <h5 id="apart"><a href="http://127.0.0.1:5500/loactiegids/loc.html">locatiegids</a></h5>
-        <p></p>
+
+      <img id="htmlcss" src="bg-htmlcss.png">
+
+      <button class="start"><a href="#">BEGIN AVONTUUR</a></button>
+    </section>
+    <!--EIND PAGINA 1-->
+
+    <!--BEGIN PAGINA 2-->
+    <section id="pagina2">
+      <div class="tcr">
+        <h1 id="top">OVER</h1>
+        <h1>Techniek college rotterdam</h1>
+        <p>Je zoon of dochter is van plan om een technische mbo-opleiding te volgen. Een belangrijke stap. Het uitzoeken van een geschikte opleiding is een heel proces. Dit kun je als ouder verwachten.</p>
       </div>
-      <div class="card card4">
-        <h5><a href="http://127.0.0.1:5500/examenplan/exam.html">Examen</a></h5>
-        <p></p>
+    </section>
+    <!--EIND PAGINA 2-->
+
+
+    <!--BEGIN PAGINA 3-->
+    <section id="pagina3">
+      <div class="txtp3">
+        <h1>De Websites</h1>
+        <p>
+          dit zijn een paar van de Websites <br>
+          die we hebben gemaakt. <br>
+          de belangerijkste zijn eduarte omdat <br>
+          je daar kan zien wanneer je op school moet <br>
+          zijn. daarna gebruiken we canvas om opdrachten <br>
+          te maken. etc... <br>
+        </p>
       </div>
-    </div>
+
+      <div class="kaarten">
+        <div class="kaart kaart1">
+          <h1><a href="#">canvas</a></h1>
+        </div>
+        <div class="kaart kaart2">
+          <h1><a href="#">eduarte</a></h1>
+        </div>
+        <div class="kaart kaart3">
+          <h1><a href="#">loactiegids</a></h1>
+        </div>
+      </div>
+
+      <div class="kaarten2">
+        <div class="kaart kaart4">
+          <h1><a href="#">begeleiding</a></h1>
+        </div>
+        <div class="kaart kaart5">
+          <h1><a href="#">examen</a></h1>
+        </div>
+        <div class="kaart kaart6">
+          <h1><a href="#">ouderavond</a></h1>
+        </div>
+      </div>
+  </section>
+  <!--EIND PAGINA 3-->
+
+
+  <!--BEGIN PAGINA 4-->
+
+  <section id="pagina4"></section>
+
+  <!--EIND PAGINA 4-->
+
+
+  <!--BEGIN PAGINA 5-->
+  <section id="pagina5">
+
+  </section>
+  <div class="footer">
+    <p>footer</p>
   </div>
-</body>
-
-<!--VOOR VOLGENDE PAGINA-->
+  <!--EIND PAGINA 5-->
+  

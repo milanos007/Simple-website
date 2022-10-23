@@ -1,318 +1,275 @@
-
 *{
   margin: 0;
   padding: 0;
 }
-/*head*/
+
+
+/* de head*/
 html{
   font-size: 50%;
   overflow-x: hidden;
-  overflow-y: scroll;
-  background-image: url(https://images3.alphacoders.com/104/1044851.jpg);
-  overflow-y: hidden;
 }
-/* dit is voor de pagina balk*/
+/* einde head*/
+
+
+
+/*BEGIN de Boven balk*/
 nav{
-  align-items: center;
+  position: fixed;
   display: flex;
-  width: 100%;
-  padding: 2rem;
-  min-height: 10vh;
+  align-items: center;
   flex-wrap: wrap;
-  margin: auto;
-  background: #000000;
   justify-content: space-between;
-  z-index: auto;
-  font-family: "Goldman", cursive;
-  font-size: 1px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  min-height: 12vh;
+  background-color: black;
+  z-index: 9999;
 }
-nav ul {
+
+nav ul{
   display: flex;
   align-items: center;
   list-style-type: none;
+  margin-right: 15%;
 }
-nav li {
+
+nav li{
   font-size: 2.5rem;
   padding: 0 4rem 0 4rem;
 }
+
+nav li#home{
+  margin-left: 20%;
+  background-color: #141414;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
 nav li :hover{
+  transition: 500ms;
   color: blue;
   transition: 0,5s;
 }
-nav a {
+
+nav li#home :hover{
+  color: red;
+}
+
+nav a{
   color: white;
   text-decoration: none;
 }
-nav img {
+
+nav img{
   width: 5vw;
   margin-right: auto;
 }
 
-/* dit is voor het menu in de pagina */
-div.sec-center h1{
-  color: white;
-}
-div.sec-center {
+/* einde bovenbalk*/
+
+
+/* BEGIN het menu menu1*/
+
+div.dropdown {
   position: absolute;
-  max-width: 100%;
-  text-align: center;
-  z-index: 200;
-  margin-left: 600px;
-  margin-top: 50px;
-}
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked){
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  pointer-events: none;
-}
-.dropdown:checked + label,
-.dropdown:not(:checked) + label{
-  position: relative;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 2;
-  height: 50px;
-  transition: all 200ms linear;
-  border-radius: 4px;
-  width: 220px;
-  letter-spacing: 1px;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  text-align: center;
-  border: none;
-  background-color: black;
-  cursor: pointer;
-  color: white;
-  box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
-}
-.dropdown:checked + label:before,
-.dropdown:not(:checked) + label:before{
-  position: fixed;
-  top: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  cursor: auto;
-  pointer-events: none;
-}
-.dropdown:checked + label:before{
-  pointer-events: auto;
-}
-.dropdown:not(:checked) + label .uil {
-  font-size: 24px;
-  margin-left: 10px;
-  transition: transform 200ms linear;
-}
-.dropdown:checked + label .uil {
-  transform: rotate(180deg);
-  font-size: 24px;
-  margin-left: 10px;
-  transition: transform 200ms linear;
-}
-div.section-dropdown {
-  position: absolute;
-  padding: 5px;
-  background-color: #111;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  border-radius: 4px;
-  display: block;
-  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: all 200ms linear;
-}
-.dropdown:checked ~ .section-dropdown{
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-div.section-dropdown:before {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  content: '';
-  display: block;
+  display: inline-block;
+  margin-top: 6.5%;
+  margin-left: 25%;
   z-index: 1;
 }
-div.section-dropdown:after {
+
+button.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 300px;
+  font-family: 'Signika Negative', sans-serif;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content {
+  display: none;
   position: absolute;
-  top: -7px;
-  left: 30px;
-  width: 0; 
-  height: 0; 
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent; 
-  border-bottom: 8px solid #111;
-  content: '';
-  display: block;
-  z-index: 2;
-  transition: all 200ms linear;
-}
-div.sec-center a {
-  position: relative;
-  color: #fff;
-  transition: all 200ms linear;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  border-radius: 2px;
-  padding: 5px 0;
-  padding-left: 20px;
-  padding-right: 15px;
-  margin: 2px 0;
-  text-align: left;
-  text-decoration: none;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: space-between;
-    -ms-flex-pack: distribute;
-}
-div.sec-center a:hover {
-  color: #102770;
-  background-color: #ffeba7;
-}
-div.sec-center a .uil {
-  font-size: 22px;
-}
-.dropdown-sub:checked + label,
-.dropdown-sub:not(:checked) + label{
-  position: relative;
-  color: #fff;
-  transition: all 200ms linear;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  border-radius: 2px;
-  padding: 5px 0;
-  padding-left: 20px;
-  padding-right: 15px;
-  text-align: left;
-  text-decoration: none;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: space-between;
-    -ms-flex-pack: distribute;
-    cursor: pointer;
-}
-.dropdown-sub:checked + label .uil,
-.dropdown-sub:not(:checked) + label .uil{
-  font-size: 22px;
-}
-.dropdown-sub:not(:checked) + label .uil {
-  transition: transform 200ms linear;
-}
-.dropdown-sub:checked + label .uil {
-  transform: rotate(135deg);
-  transition: transform 200ms linear;
-}
-.dropdown-sub:checked + label:hover,
-.dropdown-sub:not(:checked) + label:hover{
-  color: #102770;
-  background-color: #ffeba7;
-}
-div.section-dropdown-sub {
-  position: relative;
-  display: block;
-  width: 100%;
-  pointer-events: none;
-  opacity: 0;
-  max-height: 0;
-  padding-left: 10px;
-  padding-right: 3px;
-  overflow: hidden;
-  transition: all 200ms linear;
-}
-div.dropdown-sub:checked ~ .section-dropdown-sub{
-  pointer-events: auto;
-  opacity: 1;
-  max-height: 999px;
-}
-div.section-dropdown-sub a {
-  font-size: 14px;
-}
-div.section-dropdown-sub a .uil {
+  background-color: #000000;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+  top: calc(100% + 1px);
+  font-family: 'Signika Negative', sans-serif;
+  text-align: center;
   font-size: 20px;
 }
 
-/* software dev tekst*/
-.sd{
-  position: absolute;
-  display: flex;
-  align-items: center;
-  height: 80%;
-  font-family: Goldman, cursive;
-}
-.soft{
-  flex-basis: 50%;
-  margin-left: 100px;
-}
-div.soft h1{
-  font-size: 88px;
-}
-div.soft p{
-  font-size: 15px;
-}
-div.soft button{
-  width: 180px;
-  color: white;
-  font-size: 20px;
-  padding: 12px 0;
-  background: rgb(0, 0, 0);
-  border: 0;
-  border-radius: 20px;
-  outline: none;
-  margin-top: 20px;
-}
-div.soft button :hover{
-  color: blue;
-}
-div.soft button a{
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
   text-decoration: none;
-  color: white;
+  display: block;
 }
-div.soft button a :hover{
+
+.dropdown-content a:hover {
+  background-color: #080808;
+  border-radius: 5px;
+  transition: 350ms;
   color: blue;
 }
-div.soft h5 a{
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+  border-radius: 5px;
+}
+
+/* EINDE HET MENU*/
+
+section{
+  height: 100vh;
+  z-index: 1;
+}
+/* BEGIN PAGINA 1*/
+
+section#pagina1{
+  background-image: url(bg-pge1.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+div.hoofdtxt{
+  position: absolute;
+  font-family: "Goldman", cursive;
+  margin-top: 12%;
+  margin-left: 2.5%;
+}
+div.hoofdtxt h1{
+  font-family: "Goldman", cursive;
+  font-size: 60px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+ff{
+  margin-left: 35%;
+}
+div.hoofdtxt p{
+  font-family: "Goldman", cursive;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+img#htmlcss{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 60%;
+  width: 35vw;
+}
+
+button.start {
+  position: absolute;
+  margin-top: 34%;
+  margin-left: 32%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 200px;
+  font-family: 'Signika Negative', sans-serif;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+}
+button.start a{
   text-decoration: none;
   color: black;
 }
-div.soft h5 a :hover{
+button.start:hover{
+  background-color: rgb(100, 100, 100);
+  transition: 500ms;
+}
+button.start a:hover{
   color: blue;
+  transition: 1000ms;
 }
 
-/* afbeeldingen met de tekst*/
+/* EIND PAGINA 1*/
 
-div.card{
+
+/*BEGIN PAGINA 2*/
+
+section#pagina2{
+  height: 30vh;
+  background-color: black;
+}
+div.tcr{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Goldman", cursive;
+}
+div.tcr h1{
+  font-size: 50px;
+}
+div.tcr h1#top{
+  margin-top: 30px;
+}
+div.tcr p{
+  font-size: 13px;
+}
+/*EIND PAGINA 2*/
+
+
+/*BEGIN PAGINA 3*/
+section#pagina3{
+background-color: black; /* voor degenen die het niet doen in hun browser*/
+background-image: linear-gradient(black, white);
+height: 100vh;
+}
+div.txtp3{
+  position: absolute;
+  color: white;
+  margin-left: 5%;
+  font-family: "Goldman", cursive;
+  margin-top: 10%;
+}
+
+div.txtp3 h1{
+  font-size: 60px;
+}
+
+div.txtp3 p{
+  margin-top: 20%;
+  font-size: 20px;
+}
+
+div.kaarten{
+  position: absolute;
+  margin-top: 2%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  right: 0;
+}
+
+div.kaarten2{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 22%;
+  right: 0;
+}
+
+div.kaart{
   width: 250px;
   height: 280px;
   display: inline-block;
@@ -324,58 +281,75 @@ div.card{
   background-position: center;
   background-size: cover;
   transition:0.5s;
+  text-align: center;
+  font-size: 20px;
 }
-div.card :hover{
+
+div.kaart a{
+  text-decoration: none;
+  font-family: "Goldman", cursive;
+  color: black;
+}
+
+div.kaart a:hover{
   color: blue;
+  transition: 300ms;
 }
-div.soft h1{
-  text-shadow: 4px 4px 8px rgb(36, 36, 36);
+
+div.kaart:hover{
+  transform: translateY(-10px);
+  transition: 600ms;
 }
-div.card1{
+
+div.kaart1{
   background-image: url(https://wallpapercave.com/wp/wp4834728.jpg);
 }
-div.card2{
+div.kaart2{
   background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80);
 }
-div.card3{
+div.kaart3{
   background-image: url(https://images.pexels.com/photos/3593865/pexels-photo-3593865.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
 }
-div.card4{
+div.kaart4{
   background-image: url(https://media.istockphoto.com/vectors/school-supplies-seamless-pattern-with-line-icons-study-tools-globe-vector-id1151966778);
 }
-div.soft{
-  font-size: 25px;
-  color: rgb(0, 0, 0);
+div.kaart5{
+  background-image: url(https://img.freepik.com/free-vector/elegant-white-wallpaper-with-golden-details_23-2149095007.jpg?w=2000);
 }
-div.soft h5{
-  font-size: 33px;
+div.kaart6{
+  background-image: url(https://r1.ilikewallpaper.net/iphone-12-pro-wallpapers/download-103214/photography-of-tree.jpg);
 }
-/* ZODAT JE EEN AFBEELDING LAAT BEWEGEN: img = Transition + img hover = Transform translateY */
-div.card:hover{
-  transform: translateY(-10px);
-  color: blue;
+/*EIND PAGINA 3*/
+
+
+/*BEGIN PAGINA 4*/
+section#pagina4{
+height: 10vh;
+background-color: rgb(167, 167, 167); /* voor degenen die het niet doen in hun browser*/
+background-image: linear-gradient(white, #C2C3C6);
 }
-/* voor devices*/
-@media only screen and (max-width: 1400px) {
-  div.card{
-    width: 150px;
-    height: 180px;
-  }
-  div.soft h5{
-    font-size: 23px;
-  }
-  div.soft h5#apart{
-    font-size: 18px;
-  }
+/*EIND PAGINA 4*/
+
+
+/*BEGIN PAGINA 5*/
+section#pagina5{
+  background-image: url(bg-last-w.png);
+  background-size: cover;
+  background-position: bottom;
+  height: 90vh;
 }
-@media only screen and (max-width: 768px) {
-  div.card{
-    display: none;
-  }
-  div.sec-center{
-    margin-left: 500px;
-  }
-  li{
-    margin-bottom: 30px;
-  }
+/*EIND PAGINA 5*/
+
+/*EXTRA*/
+::-webkit-scrollbar {
+  display: none;
+}
+.footer {
+  height: 10vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
 }
