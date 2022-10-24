@@ -4,6 +4,7 @@
 }
 html{
     font-size: 50%;
+    background-color: white;
 }
 nav{
     position: fixed;
@@ -14,7 +15,6 @@ nav{
     width: 100%;
     font-family: 'Poppins', sans-serif;
     min-height: 12vh;
-    background-color: black;
     z-index: 9999;
 }
   
@@ -22,7 +22,7 @@ nav ul{
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin-left: auto;
+    margin-left: 29%;
 }
   
 nav li{
@@ -31,9 +31,11 @@ nav li{
 }
   
 nav li#home{
-    background-color: #141414;
+    background-color: white;
     padding: 10px 50px;
     border-radius: 10px;
+    margin-left: 31%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
   
 nav li :hover{
@@ -41,13 +43,13 @@ nav li :hover{
     color: blue;
     transition: 0,5s;
 }
-  
+
 nav li#home :hover{
     color: red;
 }
   
 nav a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
   
@@ -55,4 +57,46 @@ nav img{
     width: 5vw;
     margin-right: auto;
     cursor: pointer;
+}
+
+section{
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    margin-left: 20%;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.maintxt{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 2%;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.maintxt p{
+    font-size: 25px;
+}
+img#pac{
+    position: absolute;
+    width: 5vw;
+    animation-name: pac;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes pac{
+    0% {top: 0px; left: 0px;}
+    40% {top: 88vh; left: 13%;}
+    50% {top: 88vh; left: 0px;}
+    90% {top: 0px; left: 13%;}
+    100% {top: 0px; left: 0px;}
+  }
+img#apex{
+    position: absolute;
+    width: 15vw;
+    margin-top: 10%;
+    margin-left: 60%;
 }
