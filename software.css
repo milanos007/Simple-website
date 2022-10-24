@@ -1,0 +1,121 @@
+/* dit is voor de pagina balk*/
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 50%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-image: url(https://img.freepik.com/free-vector/white-background-with-wavy-lines-copy-space_23-2148822145.jpg?t=st=1663728991~exp=1663729591~hmac=8041b82fd2e9cfa6da189b59a99e04b0e0be75565b105114017b4d9ca9eea91c);
+  background-size: cover;
+}
+nav{
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #000000;
+  justify-content: space-between;
+  z-index: auto;
+  font-family: "Goldman", cursive;
+  font-size: 1px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav li :hover{
+  color: blue;
+  transition: 0,5s;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  width: 5vw;
+  margin-right: auto;
+}
+
+/* voor de main tekst*/
+body{
+  font-family: "Goldman", cursive;
+}
+div.txt{
+  color: black;
+}
+div.sd{
+  font-family: Goldman, cursive;
+  font-size: 25px;
+  margin-left: 10%;
+  margin-top: 200px;
+}
+div.soft h1{
+  font-size: 50px;
+}
+div.soft p{
+  font-size: 15px;
+  margin-top: 10px;
+}
+div.vs{
+  position: absolute;
+  font-size: 15px;
+  margin-left: 70%;
+  margin-top: -340px;
+  transition: 1s;
+}
+div.vs img{
+  width: 25vw;
+  border-radius: 20px;
+  cursor: pointer;
+}
+div.vs :hover{
+  transform: translateY(-3px);
+}
+div.git{
+  position: absolute;
+  font-size: 15px;
+  margin-left: 70%;
+  transition: 1s;
+}
+div.git img{
+  width: 25vw;
+  border-radius: 20px;
+  cursor: pointer;
+}
+div.git :hover{
+  transform: translateY(-3px);
+}
+div.klik{
+  position: absolute;
+  align-items: center;
+  margin-left: 35%;
+  margin-top: 2%;
+  font-size: 20px;
+}
+div.klik p :hover{
+  color: blue;
+}
+div.klak{
+  position: absolute;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 2%;
+  font-size: 20px;
+}
+div.klak p :hover{
+  color: blue;
+}
+a{
+  text-decoration: none;
+  color: rgb(16, 16, 16);
+}

@@ -9,40 +9,58 @@
     overflow-y: scroll;
   }
   nav{
-    align-items: center;
+    position: fixed;
     display: flex;
-    width: 100%;
-    padding: 2rem;
-    min-height: 10vh;
+    align-items: center;
     flex-wrap: wrap;
-    margin: auto;
-    background: #000000;
     justify-content: space-between;
-    z-index: auto;
-    font-family: "Goldman", cursive;
-    font-size: 1px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    min-height: 12vh;
+    background-color: black;
+    z-index: 9999;
   }
-  nav ul {
+  
+  nav ul{
     display: flex;
     align-items: center;
     list-style-type: none;
+    margin-right: 15%;
   }
-  nav li {
+  
+  nav li{
     font-size: 2.5rem;
     padding: 0 4rem 0 4rem;
   }
+  
+  nav li#home{
+    margin-left: 20%;
+    background-color: #141414;
+    padding: 10px 50px;
+    border-radius: 10px;
+  }
+  
   nav li :hover{
+    transition: 500ms;
     color: blue;
     transition: 0,5s;
   }
-  nav a {
+  
+  nav li#home :hover{
+    color: red;
+  }
+  
+  nav a{
     color: white;
     text-decoration: none;
   }
-  nav img {
+  
+  nav img{
     width: 5vw;
     margin-right: auto;
+    cursor: pointer;
   }
+  
 /*DIT IS VOOR DE PAGINA'S*/
 div.werk{
   height: 100vh;
