@@ -159,7 +159,7 @@ img#plane{
 }
 @keyframes plane{
   0% {left: -10%;}
-  100% {left: 100%;}
+  100% {left: 140%;}
 }
 
 @keyframes button-f{ /*van de witte button (begin avontuur)*/
