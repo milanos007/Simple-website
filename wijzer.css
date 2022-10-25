@@ -19,6 +19,7 @@
     min-height: 12vh;
     background-color: black;
     z-index: 9999;
+    top: 0;
   }
   
   nav ul{
@@ -63,6 +64,7 @@
   
 body{
   font-family: 'Noto Sans Mono', monospace;
+  margin-top: 10%;
 }
 html{
   background-image: url(https://images5.alphacoders.com/366/366327.jpg);
@@ -82,11 +84,11 @@ div.main p{
   font-size: 30px;
 }
 section{
-  height: 40vh;
+  height: 60vh;
 }
 div.one{
   margin-left: 5%;
-  margin-top: 10%;
+  margin-top: 30%;
 }
 div.one h1{
   font-size: 60px;

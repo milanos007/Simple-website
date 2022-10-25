@@ -144,6 +144,7 @@ section#pagina1{
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
+  z-index: 5;
 }
 
 
@@ -168,6 +169,20 @@ img#plane{
   50% {top: 0px;}
   75% {left: 0px; top: 10px;}
   100% {left: 0px; top: 0px;}
+}
+
+img#dog{
+  position: absolute;
+  transform: scaleX(-1);
+  width: 10vw;
+  margin-top: 40%;
+  animation-name: dog;
+  animation-duration: 30000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes dog{
+  0% {right: -10%;}
+  100% {right: 140%;}
 }
 
 /* END ANIMATIES*/
@@ -238,6 +253,7 @@ button.start a:hover{
 section#pagina2{
   height: 30vh;
   background-color: black;
+  z-index: 9999;
 }
 div.tcr{
   display: flex;
@@ -265,6 +281,7 @@ section#pagina3{
 background-color: black; /* voor degenen die het niet doen in hun browser*/
 background-image: linear-gradient(black, white);
 height: 100vh;
+z-index: 10;
 }
 div.txtp3{
   position: absolute;
@@ -389,6 +406,7 @@ section#pagina4{
 height: 10vh;
 background-color: rgb(167, 167, 167); /* voor degenen die het niet doen in hun browser*/
 background-image: linear-gradient(white, #C2C3C6);
+z-index: 10;
 }
 /*EIND PAGINA 4*/
 
@@ -399,6 +417,7 @@ section#pagina5{
   background-size: cover;
   background-position: bottom;
   height: 90vh;
+  z-index: 10;
 }
 
 img#boat{

@@ -21,6 +21,7 @@
     min-height: 12vh;
     background-color: black;
     z-index: 9999;
+    top: 0;
   }
   
   nav ul{
@@ -134,4 +135,7 @@ img{
   position: absolute;
   margin-left: 1050px;
   margin-top: 250px;
+}
+body{
+  margin-top: 10%;
 }

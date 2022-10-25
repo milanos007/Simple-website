@@ -19,6 +19,7 @@
     min-height: 12vh;
     background-color: black;
     z-index: 9999;
+    top: 0;
   }
   
   nav ul{
@@ -107,6 +108,9 @@ div.mainp p{
   font-size: 25px;
   font-family: 'Rubik', sans-serif;
   margin-left: 10%;
+}
+body{
+  margin-top: 10%;
 }
 
 
