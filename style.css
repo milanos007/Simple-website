@@ -531,6 +531,49 @@ div.footer h1{
 
 /*DEVICES*/
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width:1367px) {
+  div.dropdown{
+    margin-top: 9%;
+    margin-left: 26%;
+  }
+  button.dropbtn {
+    padding: 11px;
+    font-size: 20px;
+    border-radius: 2px;
+    min-width: 200px;
+  }
+  button.start{
+    margin-top: 38%;
+  }
+  button.end{
+    margin-top: 36%;
+  }
+  img#dog{
+    margin-top: 45%;
+  }
   
+  .dropdown-content {
+    min-width: 200px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  
+  .dropdown-content a {
+    padding: 120x 14px;
+  }
+  /*P2*/
+  div.kaart{
+    width: 220px;
+    height: 250px;
+    font-size: 15px;
+  }
+  div.maintxt5{
+    margin-top: 6%;
+  }
+  .tabel{
+    margin-top: 27%;
+  }
+  img#boat{
+    margin-top: 390px;
+  }
 }
