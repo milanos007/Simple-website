@@ -1,47 +1,102 @@
-/* dit is voor de pagina balk*/
 *{
     margin: 0;
     padding: 0;
-  }
-  html{
+}
+html{
     font-size: 50%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background: url(backgrond.png);
-    overflow-y: hidden;
-  }
-  nav{
-    align-items: center;
+    background-color: white;
+}
+nav{
+    position: fixed;
     display: flex;
-    width: 100%;
-    padding: 2rem;
-    min-height: 10vh;
+    align-items: center;
     flex-wrap: wrap;
-    margin: auto;
-    background: #000000;
     justify-content: space-between;
-    z-index: auto;
-    font-family: "Goldman", cursive;
-    font-size: 1px;
-  }
-  nav ul {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    min-height: 12vh;
+    z-index: 9999;
+}
+  
+nav ul{
     display: flex;
     align-items: center;
     list-style-type: none;
-  }
-  nav li {
+    margin-left: 29%;
+}
+  
+nav li{
     font-size: 2.5rem;
     padding: 0 4rem 0 4rem;
-  }
-  nav li :hover{
+}
+  
+nav li#home{
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-left: 31%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+  
+nav li :hover{
+    transition: 500ms;
     color: blue;
     transition: 0,5s;
-  }
-  nav a {
-    color: white;
+}
+
+nav li#home :hover{
+    color: red;
+}
+  
+nav a{
+    color: black;
     text-decoration: none;
-  }
-  nav img {
+}
+  
+nav img{
     width: 5vw;
     margin-right: auto;
+    cursor: pointer;
+}
+
+section{
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    margin-left: 20%;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.maintxt{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 2%;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.maintxt p{
+    font-size: 20px;
+}
+img#basketball{
+    position: absolute;
+    width: 5vw;
+    animation-name: pac;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes pac{
+    0% {top: 0px; left: 0px;}
+    40% {top: 88vh; left: 13%;}
+    50% {top: 88vh; left: 0px;}
+    90% {top: 0px; left: 13%;}
+    100% {top: 0px; left: 0px;}
   }
+  img#milan{
+    position: absolute;
+    width: 15vw;
+    margin-top: 10%;
+    margin-left: 60%;
+}
