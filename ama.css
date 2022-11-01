@@ -62,7 +62,7 @@ nav img{
 section{
     position: absolute;
     width: 60%;
-    height: 100vh;
+    height: 150vh;
     background-color: white;
     margin-left: 20%;
     z-index: 1;
@@ -99,4 +99,14 @@ img#apex{
     width: 15vw;
     margin-top: 10%;
     margin-left: 60%;
+}
+video#apex{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin-top: 55%;
+    margin-left: 35%;
+    border: 0;
+    outline: none;
+    padding: 10px;
 }
