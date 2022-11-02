@@ -9,42 +9,74 @@
     overflow-y: scroll;
   }
   nav{
-    align-items: center;
+    top: 0%;
+    position: fixed;
     display: flex;
-    width: 100%;
-    padding: 2rem;
-    min-height: 10vh;
+    align-items: center;
     flex-wrap: wrap;
-    margin: auto;
-    background: #000000;
     justify-content: space-between;
-    z-index: auto;
-    font-family: "Goldman", cursive;
-    font-size: 1px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    min-height: 12vh;
+    background-color: black;
+    z-index: 9999;
   }
-  nav ul {
+  
+  nav ul{
     display: flex;
     align-items: center;
     list-style-type: none;
+    margin-right: 15%;
   }
-  nav li {
+  
+  nav li{
     font-size: 2.5rem;
     padding: 0 4rem 0 4rem;
   }
+  
+  nav li#home{
+    margin-left: 20%;
+    background-color: #141414;
+    padding: 10px 50px;
+    border-radius: 10px;
+  }
+  
   nav li :hover{
+    transition: 500ms;
     color: blue;
     transition: 0,5s;
   }
-  nav a {
+  
+  nav li#home :hover{
+    color: red;
+  }
+  
+  nav a{
     color: white;
     text-decoration: none;
   }
-  nav img {
+  
+  nav img{
     width: 5vw;
     margin-right: auto;
+    cursor: pointer;
   }
 /*FF SNEL EXTRA*/
 html{
-  background-image: url(https://images5.alphacoders.com/366/366327.jpg);
+  background-image: url(bg-backgroudn.jpg);
+  background-size: cover;
 }
 /*DIT IS VOOR DE PAGINA'S*/
+div.main{
+  font-family: 'Goldman',cursive;
+  margin-top: 4.5%;
+  color: black;
+  margin-left: 40px;
+  margin-top: 10%;
+}
+div.main h1{
+  font-size: 75px;
+}
+div.main p{
+  font-size: 24PX;
+}
